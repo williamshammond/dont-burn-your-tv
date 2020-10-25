@@ -35,10 +35,6 @@ source = ColumnDataSource(data=fileData)
 cat_list = source.data["Category"].tolist()
 
 
-colormap = {'Landfill': 'red', 'C&D Landfill': 'orange', 'Transfer Station': 'yellow', 'Municipal Landfill': 'red', 'Compost Facility': 'green'
-,'Waste Tire Facility': 'black','Recycling Center': 'blue'}
-
-# Create a list of colors for each value that we will be looking at.
 
 tooltips=[
         ('Name', '@Name'),
@@ -49,7 +45,11 @@ p.add_tools(HoverTool(tooltips=tooltips))
 
 #Render glyph/ For cmap use fill_color instead of color
 p.circle(x="Long", y="Lat", fill_color=factor_cmap("Category", palette=Reds8, factors=cat_list),
-       fill_alpha=1.0, source=source)
+       fill_alpha=1.0, source=source, legend="Category")
+
+p.legend.orientation="vertical"
+p.legend.location="bottom_left"
+p.legend.label_text_font_size="10px"
 
 
 output_notebook()
