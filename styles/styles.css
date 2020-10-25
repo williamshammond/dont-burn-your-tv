@@ -1,0 +1,64 @@
+html, body {
+	margin: 20px 40px 20px 40px;
+	font-family: sans-serif;
+}
+h1 {  /* Livestream headers */
+    position: relative;
+	font-family: 'Oswald-Medium';
+	opacity: 0.9;
+	font-size: 30pt;
+    justify-content: center;
+	letter-spacing: 0.009375em;
+    text-align: center;
+}
+h2 {  /* Stats and data text */
+	position: relative;
+	font-family: 'Montserrat-Medium';
+	font-size: 16pt;
+	letter-spacing: 0.009375em;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.center {
+    position:relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.bk-root{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+.state-menu {
+    width: 40%;
+    position: relative;
+    right: 0px;
+}
+/* IMPORTED FONTS */
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('fonts/Oswald-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url('fonts/Oswald-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('fonts/Oswald-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald-SemiBold';
+    src: url('fonts/Oswald-SemiBold.ttf') format('truetype');
+}
