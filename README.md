@@ -1,2 +1,2 @@
 # dont-burn-your-tv
-This will be a data visualization project.
+Interactive map showing the location of waste disposal sites in states. Currently shows sites in Alabama.
